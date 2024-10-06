@@ -57,3 +57,21 @@ else if (x == 0)
     Console.WriteLine("Not Allowed to Devide by Zero");
 }
 #endregion
+
+#region Task3
+Console.WriteLine("Input 5 or 12");
+int number3 = int.Parse(Console.ReadLine());
+
+if (number3 == 5)
+{
+    Console.WriteLine(12);
+}
+else if (number3 == 12)
+{
+    Console.WriteLine(5);
+}
+else
+{
+    Console.WriteLine("Try again");
+}
+#endregion

@@ -75,3 +75,16 @@ else
     Console.WriteLine("Try again");
 }
 #endregion
+
+#region Task4
+Console.WriteLine("Please, enter a number");
+int number2 = int.Parse(Console.ReadLine());
+
+for (int i = 1; i < 10; i++)
+{
+    int x;
+    x = (number2 * i);
+    Console.WriteLine($"{number2} * {i} = {x}");
+}
+#endregion
+

@@ -137,15 +137,15 @@ static void UpdateContact()
 #endregion
 
 #region Task3
-//var numbersList = new List<int> { 1, 2, 3, 4, 5 };
+var numbersList = new List<int> { 1, 2, 3, 4, 5 };
 
-//var frequency = from n in numbersList group n by n into amount select amount;
+var frequency = from n in numbersList group n by n into amount select amount;
 
-//foreach (var item in numbersList)
-//{
-//    // mistakes here; dunno what's the issue
-//    Console.WriteLine($" {item.Key} Appears {item.Count()} times in your array and sum is: {item.Sum()} ");
-//}
+foreach (var item in numbersList)
+{
+    // mistakes here; dunno what's the issue
+    Console.WriteLine($" {item.Key} Appears {item.Count()} times in your array and sum is: {item.Sum()} ");
+}
 #endregion
 
 #region Task4

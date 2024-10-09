@@ -149,14 +149,14 @@ foreach (var item in numbersList)
 #endregion
 
 #region Task4
-//Console.WriteLine("Choose the amount of top students: ");
-//int n = int.Parse(Console.ReadLine());
-//int[] topResults = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-//int starter = topResults.Length - n;
+Console.WriteLine("Choose the amount of top students: ");
+int n = int.Parse(Console.ReadLine());
+int[] topResults = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+int starter = topResults.Length - n;
 
-//for (int i = 0; i < topResults.Length; i++)
-//{
-//    Console.WriteLine(topResults[i]);
-//    // prints all results ?
-//}
+for (int i = 0; i < topResults.Length; i++)
+{
+    Console.WriteLine(topResults[i]);
+    // prints all results ?
+}
 #endregion

@@ -40,100 +40,100 @@ Console.WriteLine(string.Join(" ", oddNumbers));
 #endregion
 
 #region Task2
-//// couldn't connect voids to run properly
-//while (true)
-//{
-//    Console.WriteLine("Add a new contact");
-//    Console.WriteLine("Remove a contact");
-//    Console.WriteLine("Update a contact");
+// couldn't connect voids to run properly
+while (true)
+{
+    Console.WriteLine("Add a new contact");
+    Console.WriteLine("Remove a contact");
+    Console.WriteLine("Update a contact");
 
-//    string choice = Console.ReadLine();
+    string choice = Console.ReadLine();
 
-//    switch (choice)
-//    {
-//        case "1":
-//            AddContact();
-//            break;
-//        case "2":
-//            RemoveContact();
-//            break;
-//        case "3":
-//            UpdateContact();
-//            break;
-//        default:
-//            Console.WriteLine("Please, try again");
-//            break;
-//    }
-//}
+    switch (choice)
+    {
+        case "1":
+            AddContact();
+            break;
+        case "2":
+            RemoveContact();
+            break;
+        case "3":
+            UpdateContact();
+            break;
+        default:
+            Console.WriteLine("Please, try again");
+            break;
+    }
+}
 
-//static void AddContact()
-//{
-//    var contacts = new Dictionary<string, int>();
-//    Console.WriteLine("Enter contact name: ");
-//    string name = Console.ReadLine();
-//    Console.WriteLine("Enter contact phone number: ");
-//    int number;
-//    string phoneNumber = Console.ReadLine();
-//    bool isString = int.TryParse(phoneNumber, out number);
+static void AddContact()
+{
+    var contacts = new Dictionary<string, int>();
+    Console.WriteLine("Enter contact name: ");
+    string name = Console.ReadLine();
+    Console.WriteLine("Enter contact phone number: ");
+    int number;
+    string phoneNumber = Console.ReadLine();
+    bool isString = int.TryParse(phoneNumber, out number);
 
-//    if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phoneNumber))
-//    {
-//        Console.WriteLine("Name or phone number cannot be empty");
-//        return;
-//    }
+    if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phoneNumber))
+    {
+        Console.WriteLine("Name or phone number cannot be empty");
+        return;
+    }
 
-//    if (contacts.ContainsKey(name))
-//    {
-//        Console.WriteLine("Contact already exists");
-//    }
-//    else
-//    {
-//        contacts.Add(name, number);
-//        Console.WriteLine("Contact added");
-//    }
-//}
+    if (contacts.ContainsKey(name))
+    {
+        Console.WriteLine("Contact already exists");
+    }
+    else
+    {
+        contacts.Add(name, number);
+        Console.WriteLine("Contact added");
+    }
+}
 
-//static void RemoveContact()
-//{
-//    var contacts = new Dictionary<string, int>();
-//    Console.WriteLine("Type a name to remove a contact: ");
-//    string name = Console.ReadLine();
+static void RemoveContact()
+{
+    var contacts = new Dictionary<string, int>();
+    Console.WriteLine("Type a name to remove a contact: ");
+    string name = Console.ReadLine();
 
-//    if (string.IsNullOrWhiteSpace(name))
-//    {
-//        Console.WriteLine("Name cannot be empty");
-//    }
-//    else if (contacts.Remove(name))
-//    {
-//        Console.WriteLine("Contact removed");
-//    }
-//    else
-//    {
-//        Console.WriteLine("Contact not found");
-//    }
-//}
+    if (string.IsNullOrWhiteSpace(name))
+    {
+        Console.WriteLine("Name cannot be empty");
+    }
+    else if (contacts.Remove(name))
+    {
+        Console.WriteLine("Contact removed");
+    }
+    else
+    {
+        Console.WriteLine("Contact not found");
+    }
+}
 
-//static void UpdateContact()
-//{
-//    var contacts = new Dictionary<string, int>();
-//    Console.WriteLine("Type a contact name to update: ");
-//    string name = Console.ReadLine();
+static void UpdateContact()
+{
+    var contacts = new Dictionary<string, int>();
+    Console.WriteLine("Type a contact name to update: ");
+    string name = Console.ReadLine();
 
-//    if (contacts.ContainsKey(name))
-//    {
-//        Console.Write("Write a new phone number: ");
-//        string newNumber = Console.ReadLine();
-//        // contacts[name] = newNumber;   fix this error
-//        Console.WriteLine("Contact updated successfully");
-//    }
-//    else
-//    {
-//        {
-//            Console.WriteLine("Contact not found");
-//        }
+    if (contacts.ContainsKey(name))
+    {
+        Console.Write("Write a new phone number: ");
+        string newNumber = Console.ReadLine();
+        // contacts[name] = newNumber;   fix this error
+        Console.WriteLine("Contact updated successfully");
+    }
+    else
+    {
+        {
+            Console.WriteLine("Contact not found");
+        }
 
-//    }
-//}
+    }
+}
 #endregion
 
 #region Task3
